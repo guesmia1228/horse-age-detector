@@ -1,0 +1,114 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="wrapper" id="wrapper">
+
+	<!--header-->
+	<header>
+	<div class="header">
+		<button class="btn btn-primary"	id="btnlogin">LogIn</button>
+		<button class="btn btn-primary"	id="btnsignup">SignUp</button>
+	</div>
+	<div class="jumbotron jumbotron-fluid" id="banner">
+		<div class="parallax text-center">
+			<div class="parallax-pattern-overlay">
+				<div class="container text-center" id="size-banner">
+					<a href="#"><img id="site-title" src="{% static 'img/logo.png' %}" alt="logo"/></a>
+					<h2 class="display-2">Horse Age Detector</h2>
+					<h3 class="learn">You can estimate horse age using teeth image!</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
+
+	<!--about us-->
+	<section class="aboutus" id="aboutus">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+		<div class="heading text-center">
+			<img class="dividerline" src="{% static 'img/sep.png' %}" alt="">
+			<h2>About Horse Age Detector</h2>
+
+			<img class="dividerline" src="{% static 'img/sep.png' %}" alt="">
+			<h3><mark>Horse Age Detector</mark> is the world’s first AI SaaS service for detecting horse age using horse teeth image. We've implemented three type of horse teeth analysis engines using <mark>Lower Teeth</mark>, <mark>Upper Teeth</mark>, <mark>Side Teeth</mark>.</h3>
+			</div>
+			</div>
+		</div>
+
+	</div>
+	</section>
+
+
+	<!--Contact Us-->
+	<section class="contact" id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+		<div class="heading">
+				<img class="dividerline" src="{% static 'img/sep.png' %}" alt="">
+				<h2>Contact Us</h2>
+				<img class="dividerline" src="{% static 'img/sep.png' %}" alt="">
+				<h3>Feel free to reach out for any questions!
+				</h3>
+			</div>
+		</div>
+		</div>
+	</div>
+	 <div class="container mx-width">
+      <div class="row">
+		<div class="done">
+			<div class="alert alert-success">
+				<button type="button" class="close" data-dismiss="alert">×</button>
+				Your message has been sent. Thank you!
+			</div>
+		</div>
+
+       <div class="col-md-12">
+            <form>
+                <fieldset class="form-group">
+                    <input type="text" class="form-control" id="Name" placeholder="Name">
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <input type="email" class="form-control" id="Email" placeholder="Email">
+                </fieldset>
+
+                <fieldset class="form-group">
+                    <textarea class="form-control" rows="3" placeholder="Message"></textarea>
+                </fieldset>
+
+                <button type="submit" class="contact submit">Submit</button>
+            </form>
+        </div>
+
+
+      </div>
+    </div>
+	</section>
+
+	<!--footer-->
+	<section class="footer" id="footer">
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+		<ul>
+			<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+			<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+			<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+			<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+
+		</ul>
+		<p>
+			&copy; 2019 - AgeHorse<br>
+		</p>
+	</div>
+		</div>
+			</div>
+	</section>
+
+</div><!--wrapper end-->
+{% endblock %}
